@@ -1,0 +1,77 @@
+# Source files (TypeScript)
+src/
+**/*.ts
+!dist/**/*.d.ts
+!dist/**/*.js
+!dist/**/*.cjs
+
+# Test files
+__tests__/
+*.test.*
+*.spec.*
+*.e2e.*
+vitest.config.ts
+dist/**/*.test.*
+dist/**/*.spec.*
+dist/__tests__/
+
+# Development files
+.vscode/
+.idea/
+*.log
+.DS_Store
+
+# Documentation source (except README and LICENSE)
+docs/
+!README.md
+!LICENSE
+
+# Scripts
+scripts/
+
+# Config files not needed in package
+tsconfig.json
+.eslintrc*
+.prettierrc*
+
+# Git files
+.git/
+.gitignore
+.github/
+
+# Build artifacts
+*.tgz
+coverage/
+.nyc_output/
+
+# Local environment files
+.env
+.env.*
+
+# Package size history
+.package-size-history/
+
+# Temporary files
+tmp/
+temp/
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+
+# Lock files (users should generate their own)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Claude configuration files
+CLAUDE.md
+
+# Other development files
+sync-worktrees.sh
+test.md
+eslint.config.js
