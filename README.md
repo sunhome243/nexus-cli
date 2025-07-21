@@ -106,14 +106,14 @@ nexus
 [Claude provides explanation]
 ```
 
-### Provider Switching
+### Provider Switching and Shared Memory with full context
 
 ```bash
-> Explain microservices architecture
+> Create a plan to implement feature A
 [Claude response]
 Ctrl+S  # Switch to Gemini
 > What are the potential drawbacks?
-[Gemini builds on the conversation]
+[Gemini builds on the previous conversation seamlessly]
 ```
 
 ### Advanced Planning
@@ -142,8 +142,8 @@ Opus model is only available on Claude Max plan
 > Plan to fix this issue and get a review from Gemini using askmodel MCP
 [Claude creates a plan and automatically asks Gemini for review with full context]
 
-> Ask GPT-4 to suggest optimizations for this code using askmodel
-[Current model consults GPT-4 with the conversation context]
+> Ask Genini to suggest optimizations for this code using askmodel
+[Current model consults Gemini with the conversation context]
 
 > Get a second opinion from Gemini on this architectural decision
 [Seamlessly requests Gemini's analysis while preserving conversation history]

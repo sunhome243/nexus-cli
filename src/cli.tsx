@@ -1,5 +1,47 @@
 #!/usr/bin/env node
 
+// Parse command line arguments before any imports
+import * as fs from 'node:fs';
+import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const args = process.argv.slice(2);
+
+// Handle --version and -v flags
+if (args.includes('--version') || args.includes('-v')) {
+  const packageJsonPath = path.join(__dirname, '..', 'package.json');
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
+  console.log(packageJson.version);
+  process.exit(0);
+}
+
+// Handle --help and -h flags
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(`
+Nexus CLI - Universal AI Bridge for Claude and Gemini
+
+Usage: nexus [options]
+
+Options:
+  -v, --version  Display version number
+  -h, --help     Display this help message
+
+Commands:
+  When running nexus, you can use the following slash commands:
+  /help          Show available commands
+  /claude        Switch to Claude provider
+  /gemini        Switch to Gemini provider
+  /model         Change the model
+  /clear         Clear the conversation
+  /exit          Exit the application
+
+For more information, visit: https://github.com/sunhome243/nexus-cli
+`);
+  process.exit(0);
+}
+
 /**
  * Nexus Clean CLI Entry Point
  * Cross-provider session management for AI chat interfaces
