@@ -1,6 +1,6 @@
 {
   "name": "@wondermoveinc/nexus-cli",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Nexus CLI - Universal AI Bridge for Claude and Gemini",
   "type": "module",
   "engines": {

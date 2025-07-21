@@ -7,7 +7,7 @@
 
 A unified command-line AI assistant that integrates multiple AI CLI providers with advanced session management, real-time provider switching, and comprehensive tool integration.
 
-**Status**: This is a proof-of-concept (POC) beta version (v0.0.1).
+**Status**: This is a proof-of-concept (POC) beta version (v0.1.1).
 
 ## Current Providers
 
@@ -298,7 +298,7 @@ Software Engineer Intern at Wondermove
 
 ## Changelog
 
-### v0.0.1 (Beta POC)
+### v0.1.0 (Beta POC)
 
 - Initial proof-of-concept release
 - Core provider switching functionality (Claude ↔ Gemini)

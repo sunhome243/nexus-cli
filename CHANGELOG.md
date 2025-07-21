@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2025-01-21
+
+### Fixed
+
+- Fixed missing runtime dependency: Moved `strip-json-comments` from devDependencies to dependencies
+- Fixed CLI argument support: Added `--version`/`-v` and `--help`/`-h` command line flags
+- Fixed package dependency organization: Moved `@types/mime-types` to devDependencies where it belongs
+
+### Added
+
+- Command line argument parsing for version and help information
+- Proper exit handling for CLI flags
+
 ## [0.1.0] - 2025-01-17
 
 ### Added
